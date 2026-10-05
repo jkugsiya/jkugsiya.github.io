@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jayesh Kugsiya - Resume</title>
+<!--
+  Source for resume.pdf and resume.docx. Run ./build.sh after editing.
+  Ligatures stay off so screening software extracts "ft", "fi", "ti" as plain letters.
+-->
+<style>
+  @page { size: Letter; margin: 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9.7pt;
+    line-height: 1.32;
+    color: #111;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0;
+  }
+  h1 { font-size: 20pt; margin: 0; letter-spacing: 0.5px; }
+  .headline { font-size: 10.5pt; font-weight: bold; margin: 2px 0 3px; color: #1d4ed8; }
+  .contact { margin: 0; }
+  a { color: #111; text-decoration: none; }
+  h2 {
+    font-size: 10pt; text-transform: uppercase; letter-spacing: 1px;
+    border-bottom: 1px solid #999; margin: 9px 0 4px; padding-bottom: 1px;
+  }
+  p { margin: 0 0 3px; }
+  ul { margin: 2px 0 4px; padding-left: 15px; }
+  li { margin: 0 0 1.5px; }
+  .role { display: flex; justify-content: space-between; margin-top: 5px; }
+  .role b { font-size: 10pt; }
+  .meta { margin: 0 0 1px; font-style: italic; }
+  .skills p { margin: 0 0 1.5px; }
+  .client { margin: 4px 0 0; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>JAYESH KUGSIYA</h1>
+<p class="headline">Senior Full-Stack &amp; AI Engineer | TypeScript, Next.js, Node.js</p>
+<p class="contact">Udaipur, India (open to remote and US relocation) | +91 73404 53376 | <a href="mailto:jkugsiya11@gmail.com">jkugsiya11@gmail.com</a></p>
+<p class="contact"><a href="https://jkugsiya.github.io">jkugsiya.github.io</a> | <a href="https://www.linkedin.com/in/jaykugsiya">linkedin.com/in/jaykugsiya</a> | <a href="https://github.com/jkugsiya">github.com/jkugsiya</a></p>
+
+<h2>Summary</h2>
+<p>Full-stack engineer with 5 years of building B2B SaaS and AI products from first commit to production. I head engineering at a commerce-software company. As a freelancer, I lead products for US clients and a chess academy with 10,000+ families. I own architecture, code, cloud infrastructure, and releases, with a focus on LLM features that stay reliable in production.</p>
+
+<h2>Skills</h2>
+<div class="skills">
+<p><b>Languages:</b> TypeScript, JavaScript, Python, SQL, Swift</p>
+<p><b>Frontend:</b> React, Next.js, Tailwind CSS, shadcn/ui, TanStack Query, React Native, Expo</p>
+<p><b>Backend:</b> Node.js, Bun, Express, GraphQL (Apollo, TypeGraphQL), tRPC, FastAPI, REST, WebSockets</p>
+<p><b>Data:</b> PostgreSQL, MongoDB, Drizzle, TypeORM, Prisma, Redis, BullMQ, Celery, ClickHouse, MeiliSearch, pgvector</p>
+<p><b>AI:</b> Vercel AI SDK, OpenAI and Anthropic APIs, RAG, tool-calling agents, structured outputs, LLM evals, LiveKit voice</p>
+<p><b>Cloud:</b> GCP (Cloud Run, Cloud SQL), AWS (ECS, EC2, S3, SES), Terraform, Docker, CI/CD, OpenTelemetry, Sentry</p>
+<p><b>Auth and payments:</b> Better Auth, OAuth 2.0, passkeys, RBAC, Stripe, PayPal, Razorpay, Chargebee, Shopify apps</p>
+</div>
+
+<h2>Experience</h2>
+
+<div class="role"><b>Director &amp; Head of Engineering</b><span>Oct 2021 – Present</span></div>
+<p class="meta">The Developer Company Pvt. Ltd. (TDCCommerce) | Udaipur, India</p>
+<ul>
+  <li>Core engineer on TDCCommerce since launch, a multi-tenant commerce ERP processing about 9,000 orders a month.</li>
+  <li>Built SuperSearch: a query builder with pivots, grouping, scheduled searches, and streamed exports.</li>
+  <li>Built payment reconciliation across Stripe, PayPal, Razorpay, and Plaid, including payout matching.</li>
+  <li>Built an AI import assistant: LLM column mapping, PDF table extraction, and streaming 250 MB CSV imports.</li>
+  <li>Built the OAuth 2.0 server and control plane that provisions each tenant on Cloud Run with its own domain.</li>
+  <li>Run per-tenant GCP infrastructure in Terraform across 2 regions: Cloud Run, Cloud SQL, and Memorystore.</li>
+  <li>Shipped usage billing and helpdesk routing for TIA, an embeddable AI agent with RAG, tools, and voice.</li>
+  <li>Built Google Ads attribution, KPI alerts, Twilio calling, passkeys, and a Shopify AI order-checking app.</li>
+  <li>Lead releases, code review, and engineering standards, and mentor the developers.</li>
+</ul>
+
+<div class="role"><b>Freelance Lead Engineer</b><span>Aug 2025 – Present</span></div>
+<p class="meta">Self-employed | Remote, for clients in the US and India</p>
+<p class="client">Amplify Lead Solutions and AMPCO Contracting (California, US)</p>
+<ul>
+  <li>Sole engineer on Bid-Board, a multi-tenant CRM with 20+ active users: GraphQL, real-time chat, RBAC, billing.</li>
+  <li>Built its AWS SES email platform: inbound threading, open and click tracking, bulk sends, and automations.</li>
+  <li>Built LeadMiner, an AI pipeline that turns California environmental filings into 10+ approved leads a day.</li>
+  <li>Built ProofStory, where a tool-using AI agent turns project footage into edited videos (Remotion, AWS ECS).</li>
+  <li>Shipped a native SwiftUI iOS app for AMPCO's guest events, with scheduled push alerts sent by staff.</li>
+</ul>
+<p class="client">Kingdom of Chess (chess academy for 10,000+ families in 30+ countries) | Aug 2025 – Jan 2026</p>
+<ul>
+  <li>Lead developer on the academy's admin, coach, and student apps (Next.js, FastAPI, MongoDB).</li>
+  <li>Built the chess curriculum: a shared PGN library with folders and search, plus a coach lesson board.</li>
+  <li>Built chess puzzle quizzes with levels, scoring, time limits, analytics, and leaderboards.</li>
+  <li>Built Microsoft Teams classes with auto-created meetings and saved recordings, plus WhatsApp reminders.</li>
+</ul>
+
+<h2>Open Source</h2>
+<p><b>DeviceGate</b> (MIT) | <a href="https://github.com/jkugsiya/DeviceGate">github.com/jkugsiya/DeviceGate</a><br>
+Self-hosted Claude Code gateway with per-device tokens, quotas, cost tracking, and audit logs.</p>
+
+<h2>Education</h2>
+<div class="role"><span><b>B.Tech, Computer Science</b>, Techno India NJR Institute of Technology</span><span>2018 – 2022</span></div>
+<p>Google Developer Student Clubs Lead. Built i3 Monuments, App of the Month on the JioGlass Store.</p>
+
+</body>
+</html>

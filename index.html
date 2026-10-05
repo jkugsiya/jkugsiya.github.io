@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jayesh Kugsiya | Senior Full-Stack &amp; AI Engineer</title>
+<meta name="description" content="Jayesh Kugsiya builds B2B SaaS and AI products end to end with TypeScript, Next.js, Node.js, PostgreSQL, and cloud infrastructure. Open to remote and US roles.">
+<meta property="og:title" content="Jayesh Kugsiya | Senior Full-Stack &amp; AI Engineer">
+<meta property="og:description" content="5 years building B2B SaaS and AI products from first commit to production.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231d4ed8'/><text x='16' y='22' font-family='Helvetica' font-size='15' font-weight='700' fill='white' text-anchor='middle'>JK</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Jayesh Kugsiya</a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="top" class="hero wrap">
+    <p class="eyebrow">Senior Full-Stack &amp; AI Engineer</p>
+    <h1>I build B2B SaaS and AI products from first commit to production.</h1>
+    <p class="lede">I head engineering at The Developer Company, where I've helped build the TDCCommerce platform since launch in 2021. As a freelancer, I lead products for US clients and a chess academy with 10,000+ families. I own architecture, code, cloud infrastructure, and releases.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:jkugsiya11@gmail.com">Email Me</a>
+      <a class="btn" href="Jayesh_Kugsiya_Resume.pdf" download>Download Resume</a>
+      <a class="btn ghost" href="https://github.com/jkugsiya">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jaykugsiya">LinkedIn</a>
+    </div>
+    <ul class="facts" aria-label="At a glance">
+      <li><strong>5 years</strong><span>shipping production software</span></li>
+      <li><strong>~9,000 orders a month</strong><span>processed on TDCCommerce</span></li>
+      <li><strong>10+ leads a day</strong><span>approved from LeadMiner's AI pipeline</span></li>
+    </ul>
+  </section>
+
+  <section id="work" class="wrap section">
+    <h2>Selected Work</h2>
+    <p class="section-intro">Products I built or co-built, and the engineering decisions behind them.</p>
+
+    <div class="cards">
+      <article class="card">
+        <header>
+          <p class="tag">Director &amp; Head of Engineering · 2021 to now</p>
+          <h3>TDCCommerce</h3>
+          <p class="sub">Multi-tenant commerce ERP and storefront platform</p>
+        </header>
+        <p>One platform runs a retailer's accounting, inventory, POS, CRM, HR, marketing, and online store. It spans 88 business modules and processes about 9,000 orders a month. Each client runs on its own deployment.</p>
+        <ul>
+          <li>Built SuperSearch, a query builder with pivots, scheduled searches, and exports streamed through background workers.</li>
+          <li>Built payment reconciliation across Stripe, PayPal, Razorpay, and Plaid.</li>
+          <li>Built an AI import assistant that maps columns, reads PDF tables, and streams 250 MB CSV files.</li>
+          <li>Built the OAuth 2.0 server and the control plane that provisions each tenant with its own domain.</li>
+          <li>Run the per-tenant GCP fleet in Terraform across 2 regions.</li>
+        </ul>
+        <p class="stack">React · Next.js · GraphQL · tRPC · PostgreSQL · Redis · BullMQ · ClickHouse · MeiliSearch · GCP · Terraform</p>
+        <a class="link" href="https://tdccommerce.com">Visit tdccommerce.com</a>
+      </article>
+
+      <article class="card">
+        <header>
+          <p class="tag">Freelance · sole engineer · 2026</p>
+          <h3>LeadMiner</h3>
+          <p class="sub">AI research pipeline for construction leads</p>
+        </header>
+        <p>Reporters spent hours reading California environmental-review filings to find construction projects. LeadMiner does the research and hands them cited, quality-scored draft leads. Reporters approve 10+ of them a day.</p>
+        <ul>
+          <li>Uses LLMs to extract, classify, and value each project from its PDFs and satellite imagery.</li>
+          <li>Researches owner and architect contacts and cites every source.</li>
+          <li>Syncs approved leads into the client's lead platform.</li>
+        </ul>
+        <p class="stack">Python · FastAPI · Celery · PostgreSQL · OpenAI · Structured outputs · Playwright · Next.js · AWS</p>
+      </article>
+
+      <article class="card">
+        <header>
+          <p class="tag">Freelance · sole engineer · 2025 to now</p>
+          <h3>Bid-Board CRM</h3>
+          <p class="sub">Multi-tenant CRM for US construction contractors</p>
+        </header>
+        <p>Teams manage businesses, contacts, projects, leads, and tasks in one place, with chat and email built in. It has 20+ active users.</p>
+        <ul>
+          <li>Built a GraphQL API with real-time updates over WebSockets and owner, admin, and member roles.</li>
+          <li>Built the email platform on AWS SES: inbound threading, open and click tracking, templates, and bulk sends.</li>
+          <li>Built a visual automation builder and 8 background job queues.</li>
+          <li>Added subscription billing with per-plan features, Microsoft calendar sync, and end-to-end and load tests.</li>
+        </ul>
+        <p class="stack">Next.js · React 19 · Apollo GraphQL · TypeORM · PostgreSQL · Redis · BullMQ · Better Auth · AWS · Playwright · k6</p>
+      </article>
+
+      <article class="card">
+        <header>
+          <p class="tag">Freelance · sole engineer · 2026</p>
+          <h3>ProofStory</h3>
+          <p class="sub">Agent-first AI video platform</p>
+        </header>
+        <p>Companies upload footage, photos, and documents from real projects. A chat agent turns them into edited videos and reusable stories.</p>
+        <ul>
+          <li>Built a tool-using agent with memory that drives the whole editing flow from chat.</li>
+          <li>Kept the chat, storyboard, and timeline editor on one shared edit plan, so they never disagree.</li>
+          <li>Added consent-gated face recognition, auto captions, beat-matched music, and quality checks.</li>
+          <li>Deployed on AWS ECS with Terraform.</li>
+        </ul>
+        <p class="stack">Next.js · Drizzle · PostgreSQL · pgvector · BullMQ · Remotion · Vercel AI SDK · Stripe · AWS · Terraform</p>
+        <a class="link" href="https://proofstory.com">Visit proofstory.com</a>
+      </article>
+
+      <article class="card">
+        <header>
+          <p class="tag">The Developer Company · 2025 to now</p>
+          <h3>TIA</h3>
+          <p class="sub">Embeddable AI agent for online stores</p>
+        </header>
+        <p>A brand adds one script tag and gets an AI agent that answers from its own content, takes actions, and hands off to a human.</p>
+        <ul>
+          <li>Built usage metering and billing for chat, voice, and attachments.</li>
+          <li>Built resumable chat streams and abuse limits.</li>
+          <li>Built the Zapier integration, the helpdesk with routing rules, lead capture, and meeting booking.</li>
+        </ul>
+        <p class="stack">Next.js · Drizzle · PostgreSQL · Better Auth · Vercel AI SDK · RAG · LiveKit voice · Stripe · Cloud Run</p>
+        <a class="link" href="https://tia.tdccommerce.com">Visit TIA</a>
+      </article>
+
+      <article class="card">
+        <header>
+          <p class="tag">Open source · MIT · 2026</p>
+          <h3>DeviceGate</h3>
+          <p class="sub">Self-hosted gateway for Claude Code</p>
+        </header>
+        <p>Each of your machines gets its own revocable token, model list, and usage quota for Claude Code.</p>
+        <ul>
+          <li>Reads token usage from live SSE streams to track cost per device, model, and day.</li>
+          <li>Keeps daily and weekly quota windows correct across daylight saving changes.</li>
+          <li>Ships with tests, CI, Docker Compose, and security and contribution docs.</li>
+        </ul>
+        <p class="stack">Next.js · Drizzle · SQLite · Better Auth · Vitest · GitHub Actions · Docker</p>
+        <a class="link" href="https://github.com/jkugsiya/DeviceGate">View on GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" class="wrap section">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li>
+        <div class="when">Oct 2021 to now</div>
+        <div>
+          <h3>Director &amp; Head of Engineering</h3>
+          <p class="sub">The Developer Company Pvt. Ltd. · Udaipur, India</p>
+          <p>I lead engineering for TDCCommerce, TIA, and the platform that runs each client's deployment. I set engineering standards, review code, run releases, and mentor developers.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Aug 2025 to now</div>
+        <div>
+          <h3>Freelance Lead Engineer</h3>
+          <p class="sub">Self-employed · Remote, for clients in the US and India</p>
+          <p><strong>Amplify Lead Solutions (California):</strong> I'm the sole engineer on Bid-Board CRM, LeadMiner, and ProofStory, and I built a SwiftUI iOS events app.</p>
+          <p><strong>Kingdom of Chess (Aug 2025 to Jan 2026):</strong> The academy teaches 10,000+ families in 30+ countries. I was lead developer on its platform for admins, coaches, and students. I built the chess curriculum library, a coach lesson board, puzzle quizzes with leaderboards, and Microsoft Teams classes with recordings.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2018 to 2022</div>
+        <div>
+          <h3>B.Tech, Computer Science</h3>
+          <p class="sub">Techno India NJR Institute of Technology</p>
+          <p>I led the Google Developer Student Club. I built i3 Monuments, a mixed-reality app named App of the Month on the JioGlass Store.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="skills" class="wrap section">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Frontend</dt><dd>React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, TanStack Query, React Native, SwiftUI</dd></div>
+      <div><dt>Backend</dt><dd>Node.js, Bun, Express, GraphQL, tRPC, FastAPI, REST, WebSockets</dd></div>
+      <div><dt>Data</dt><dd>PostgreSQL, MongoDB, Drizzle, TypeORM, Prisma, Redis, BullMQ, ClickHouse, MeiliSearch, pgvector</dd></div>
+      <div><dt>AI</dt><dd>Vercel AI SDK, OpenAI and Anthropic APIs, RAG, tool-calling agents, structured outputs, evals, voice agents</dd></div>
+      <div><dt>Cloud</dt><dd>GCP, AWS, Terraform, Docker, CI/CD, OpenTelemetry, Sentry</dd></div>
+      <div><dt>Auth and Payments</dt><dd>Better Auth, OAuth 2.0, passkeys, RBAC, Stripe, PayPal, Razorpay, Chargebee, Shopify</dd></div>
+    </dl>
+  </section>
+
+  <section id="contact" class="wrap section contact">
+    <h2>Contact</h2>
+    <p>I'm open to senior full-stack and AI product engineering roles, remote or in the US. Email me and I'll reply within a day.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:jkugsiya11@gmail.com">jkugsiya11@gmail.com</a>
+      <a class="btn" href="Jayesh_Kugsiya_Resume.pdf" download>Download Resume</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>Jayesh Kugsiya · Udaipur, India · Working with US time zones</p>
+</footer>
+</body>
+</html>
