@@ -8,13 +8,13 @@
   Ligatures stay off so screening software extracts "ft", "fi", "ti" as plain letters.
 -->
 <style>
-  @page { size: Letter; margin: 0.45in 0.55in; }
+  @page { size: Letter; margin: 0.4in 0.55in; }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 9.7pt;
-    line-height: 1.32;
+    line-height: 1.27;
     color: #111;
     font-variant-ligatures: none;
     font-feature-settings: "liga" 0, "clig" 0;
@@ -25,7 +25,7 @@
   a { color: #111; text-decoration: none; }
   h2 {
     font-size: 10pt; text-transform: uppercase; letter-spacing: 1px;
-    border-bottom: 1px solid #999; margin: 9px 0 4px; padding-bottom: 1px;
+    border-bottom: 1px solid #999; margin: 7px 0 4px; padding-bottom: 1px;
   }
   p { margin: 0 0 3px; }
   ul { margin: 2px 0 4px; padding-left: 15px; }
@@ -45,7 +45,7 @@
 <p class="contact"><a href="https://jkugsiya.github.io">jkugsiya.github.io</a> | <a href="https://www.linkedin.com/in/jaykugsiya">linkedin.com/in/jaykugsiya</a> | <a href="https://github.com/jkugsiya">github.com/jkugsiya</a></p>
 
 <h2>Summary</h2>
-<p>Full-stack engineer with 5 years of building B2B SaaS and AI products from first commit to production. I head engineering at a commerce-software company. As a freelancer, I lead products for US clients and a chess academy with 10,000+ families. I own architecture, code, cloud infrastructure, and releases, with a focus on LLM features that stay reliable in production.</p>
+<p>Full-stack engineer with 5 years of building B2B SaaS and AI products from first commit to production. I lead engineering at a commerce-software startup and lead products for US clients as a freelancer. I own architecture, code, cloud infrastructure, and releases, with a focus on reliable LLM features. My fixes ship in React Aria, Mantine, and Orval.</p>
 
 <h2>Skills</h2>
 <div class="skills">
@@ -60,7 +60,7 @@
 
 <h2>Experience</h2>
 
-<div class="role"><b>Director &amp; Head of Engineering</b><span>Oct 2021 – Present</span></div>
+<div class="role"><b>Head of Engineering (Tech Lead)</b><span>Oct 2021 – Present</span></div>
 <p class="meta">The Developer Company Pvt. Ltd. (TDCCommerce) | Udaipur, India</p>
 <ul>
   <li>Core engineer on TDCCommerce since launch, a multi-tenant commerce ERP processing about 9,000 orders a month.</li>
@@ -71,11 +71,10 @@
   <li>Run per-tenant GCP infrastructure in Terraform across 2 regions: Cloud Run, Cloud SQL, and Memorystore.</li>
   <li>Shipped usage billing and helpdesk routing for TIA, an embeddable AI agent with RAG, tools, and voice.</li>
   <li>Built Google Ads attribution, KPI alerts, Twilio calling, passkeys, and a Shopify AI order-checking app.</li>
-  <li>Lead releases, code review, and engineering standards, and mentor the developers.</li>
+  <li>Lead the team leads of a 25-developer engineering team, and own releases, code review, and standards.</li>
 </ul>
 
-<div class="role"><b>Freelance Lead Engineer</b><span>Aug 2025 – Present</span></div>
-<p class="meta">Self-employed | Remote, for clients in the US and India</p>
+<div class="role"><span><b>Freelance Lead Engineer</b> <i>| Remote, for clients in the US and India</i></span><span>Aug 2025 – Present</span></div>
 <p class="client">Amplify Lead Solutions and AMPCO Contracting (California, US)</p>
 <ul>
   <li>Sole engineer on Bid-Board, a multi-tenant CRM with 20+ active users: GraphQL, real-time chat, RBAC, billing.</li>
@@ -86,19 +85,23 @@
 </ul>
 <p class="client">Kingdom of Chess (chess academy for 10,000+ families in 30+ countries) | Aug 2025 – Jan 2026</p>
 <ul>
-  <li>Lead developer on the academy's admin, coach, and student apps (Next.js, FastAPI, MongoDB).</li>
-  <li>Built the chess curriculum: a shared PGN library with folders and search, plus a coach lesson board.</li>
-  <li>Built chess puzzle quizzes with levels, scoring, time limits, analytics, and leaderboards.</li>
+  <li>Lead developer on the admin, coach, and student apps: lesson library, puzzle quizzes, and leaderboards.</li>
   <li>Built Microsoft Teams classes with auto-created meetings and saved recordings, plus WhatsApp reminders.</li>
 </ul>
 
 <h2>Open Source</h2>
-<p><b>DeviceGate</b> (MIT) | <a href="https://github.com/jkugsiya/DeviceGate">github.com/jkugsiya/DeviceGate</a><br>
-Self-hosted Claude Code gateway with per-device tokens, quotas, cost tracking, and audit logs.</p>
+<p><b>7 merged pull requests in 2026</b>, each with tests, reviewed and merged by the maintainers:</p>
+<ul>
+  <li><b>React Aria (Adobe):</b> stopped the library from crashing on import in runtimes without a screen object, such as Deno.</li>
+  <li><b>Mantine:</b> fixed Cascader keyboard navigation in right-to-left layouts, released in 9.7.3.</li>
+  <li><b>Orval:</b> generated Zod schemas for shared responses, request bodies, and false schemas (2 pull requests).</li>
+  <li><b>Conform:</b> let onBlur and onInput handlers cancel default behavior, released in 1.21.2, and fixed a flaky test.</li>
+  <li><b>Actual Budget:</b> fixed moving budget categories between groups on mobile.</li>
+</ul>
+<p><b>DeviceGate</b> (MIT, <a href="https://github.com/jkugsiya/DeviceGate">github.com/jkugsiya/DeviceGate</a>): a self-hosted Claude Code gateway with device tokens and quotas.</p>
 
 <h2>Education</h2>
 <div class="role"><span><b>B.Tech, Computer Science</b>, Techno India NJR Institute of Technology</span><span>2018 – 2022</span></div>
-<p>Google Developer Student Clubs Lead. Built i3 Monuments, App of the Month on the JioGlass Store.</p>
 
 </body>
 </html>
